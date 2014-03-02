@@ -54,6 +54,7 @@ GEM
     mime-types (1.25.1)
     mock_redis (0.10.0)
     multi_json (1.8.4)
+    pg (0.17.1)
     polyglot (0.3.4)
     rack (1.4.5)
     rack-cache (1.2)
@@ -136,6 +137,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   mock_redis (~> 0.10.0)
+  pg
   rails (= 3.2.14)
   redis-namespace
   redis-objects
