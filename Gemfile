@@ -5,9 +5,6 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -44,4 +41,10 @@ gem 'redis-namespace'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'mock_redis', '~> 0.10.0'
+
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
