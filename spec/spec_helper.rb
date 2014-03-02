@@ -49,4 +49,6 @@ RSpec.configure do |config|
     allow(Redis).to receive(:new).and_return(redis_instance)
     Redis.current = Redis.new
   end
+
+  config.include Requests::JsonHelpers, type: :request
 end

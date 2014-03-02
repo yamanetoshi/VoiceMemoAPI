@@ -1,8 +1,10 @@
 VoiceMemoApi::Application.routes.draw do
 
   get "/memos/:id", to: "memo#find_memo_list"
-  get "/momo/:id/:time", to: "memo#find_memo_detail"
+  get "/memo/:key/:time", to: "memo#find_memo_detail"
   post "/write/:id", to: "memo#insert_memo"
+  put "/memo/:key/:time", to: "memo#update_memo"
+  delete "/memo/:key/:time", to: "memo#delete_memo"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
